@@ -1,9 +1,5 @@
 # Lispy: A Simple Lisp Interpreter in C
 
-[![Build Status](https://github.com/goreanuvictor/lispy-interpreter/actions/workflows/ci.yml/badge.svg)](https://github.com/goreanuvictor/lispy-interpreter/actions)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/goreanuvictor/lispy-interpreter.svg?style=social)](https://github.com/goreanuvictor/lispy-interpreter/stargazers)
-
 ## Overview
 
 Lispy is a lightweight Lisp interpreter written in C, developed during my internship at **SPARK SOLUTION S.R.L.** as part of my studies in Web Application Administration at the Center of Excellence in Informatics and Information Technologies (Republic of Moldova). This project implements a basic S-expression evaluator with support for functions, lists, and recursion (e.g., Fibonacci). It's inspired by classic Lisp dialects and uses the Micro Parser Combinator (MPC) library for parsing.
