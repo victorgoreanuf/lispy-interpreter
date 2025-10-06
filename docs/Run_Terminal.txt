@@ -1,2 +1,2 @@
 Windows: gcc -std=c99 -Wall mpc.c lisp.c -o main.exe && main.exe
-Ubuntu:   cc -std=c99 -Wall -ledit mpc.c lisp.c -o main && ./main
+Ubuntu:  gcc -std=c99 -Wall -ledit mpc.c lisp.c -o main && ./main

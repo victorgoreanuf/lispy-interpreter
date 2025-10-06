@@ -1,0 +1,28 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: sudo apt-get update && sudo apt-get install -y libedit-dev
+
+      - name: Build Lispy
+        run: cc -std=c99 -Wall src/mpc.c src/lisp.c -ledit -o lispy
+
+      - name: Run Tests
+        run: ./lispy lib/library.lisp tests/test.lisp
+
+      - name: Check for Errors
+        run: |
+          if [ $? -eq 0 ]; then
+            echo "Build and tests passed!"
+          else
+            echo "Build or tests failed!"
+            exit 1
+          fi
