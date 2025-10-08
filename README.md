@@ -1,31 +1,27 @@
-Lispy: A Simple Lisp Interpreter in C 🚀
-Welcome to Lispy, a lightweight Lisp interpreter crafted in C during my internship at SPARK SOLUTION S.R.L. as part of my studies in Web Application Administration at the Center of Excellence in Informatics and Information Technologies (Republic of Moldova). This project brings the elegance of Lisp to life with a focus on S-expressions, functional programming, and recursion (think Fibonacci!). Powered by the Micro Parser Combinator (MPC) library, Lispy is a fun way to dive into interpreter design.
-Why Lispy? Lisp's minimalist yet powerful syntax makes it a perfect playground for learning parsing, evaluation, and low-level C programming. Check out my full internship report here for the behind-the-scenes story! 📖
-Key Features 🌟
+# Lispy: A Simple Lisp Interpreter in C
 
-Arithmetic Operations: Add, subtract, multiply, divide with ease (e.g., (+ 1 2) → 3).
-List Manipulation: Functions like map, filter, and fold for powerful list processing.
-Lambdas & Recursion: Define custom functions and compute things like (fib 10) → 55.
-Standard Prelude: Load lib/library.lisp for a rich set of utilities (view it here).
-Error Handling: Robust handling for invalid inputs, division by zero, and more.
+## Overview
 
-Getting Started 🛠️
-Prerequisites
-To run Lispy, you'll need:
+Lispy is a lightweight Lisp interpreter written in C, developed during my internship at **SPARK SOLUTION S.R.L.** as part of my studies in Web Application Administration at the Center of Excellence in Informatics and Information Technologies (Republic of Moldova). This project implements a basic S-expression evaluator with support for functions, lists, and recursion (e.g., Fibonacci). It's inspired by classic Lisp dialects and uses the Micro Parser Combinator (MPC) library for parsing.
 
-Compiler: GCC or Clang
-Library: libedit (or readline on Linux) for the interactive REPL
-Ubuntu: sudo apt-get install libedit-dev
-macOS: brew install libedit
-Windows: Use MinGW with libedit or a compatible setup
+Key highlights:
 
-Make: For easy building with the provided Makefile
-Dependencies: The MPC library (included as mpc.c and mpc.h)
+- **Internship Context**: Built to demonstrate low-level programming skills, error handling, and testing. See the full report in [docs/Raport.pdf](docs/Raport.pdf).
+- **Why Lisp?** Lisp's simplicity and power make it ideal for exploring interpreters—perfect for learning about parsing, evaluation, and functional programming.
+- **Features**: Arithmetic ops, list manipulation (e.g., `map`, `filter`, `fold`), lambdas, and a standard prelude (`lib/library.lisp`).
 
-Build Instructions
-Lispy is split into multiple source files (main.c, lval.c, lenv.c, builtins.c, eval.c, read.c, mpc.c). Use the Makefile for a seamless build:
-make
-./lispy
+## Installation and Build
+
+### Prerequisites
+
+- GCC (or Clang) compiler
+- On Linux: `libedit-dev` for readline support
+
+### Build Instructions
+
+From `docs/Run_Terminal.txt`:
+
+> > > > > > > 3d3c3a8b36044f4a2888638b79bd9e2d78288ff2
 
 Clean up build artifacts:
 make clean
