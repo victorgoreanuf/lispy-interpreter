@@ -4,8 +4,10 @@
 lispy
 lispy.exe
 
-# Temp files
+# Temporary files
 *.swp
+*.bak
+*.tmp
 .DS_Store
 *~
 *.log
@@ -17,11 +19,15 @@ lispy.exe
 *.sublime-workspace
 *.sublime-project
 
-# OS generated files
+# OS-generated files
 Thumbs.db
+ehthumbs.db
 
-# Compiled LaTeX files
+# Compiled LaTeX files (if applicable)
 *.aux
 *.log
 *.out
 *.toc
+
+# Dependency directories (if you add external libraries)
+deps/
