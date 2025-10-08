@@ -13,10 +13,10 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y libedit-dev
 
       - name: Build Lispy
-        run: make
+        run: cd src && make
 
       - name: Run Tests
-        run: ./lispy lib/library.lisp tests/test.lisp
+        run: cd src && ./lispy ../lib/library.lisp ../tests/test.lisp
 
       - name: Check for Errors
         run: |
